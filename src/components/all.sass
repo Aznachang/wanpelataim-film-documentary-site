@@ -10,6 +10,14 @@ $primary-invert: $kaldi-red-invert
 $body-color: #333
 $black: #2b2523
 
+// Social Media Colors
+// Facebook
+$fb-icon: #428bca
+// Twitter
+$twitter-icon: #5bc0de
+// Instagram
+$instagram-icon: #e1306c
+
 .navbar .navbar-menu
   box-shadow:none !important
 
@@ -111,6 +119,19 @@ $menu-label-color: $white-ter
     height: 1em
     vertical-align: middle
     display: inline
+.social a[title='facebook']:hover
+    background-color: $fb-icon
+    &:img 
+      color: whitesmoke
+.social a[title='twitter']:hover
+    background-color: $twitter-icon
+    &:img
+      color: whitesmoke
+.social a[title='instagram']:hover
+    background-color: $instagram-icon
+    &:img
+      color: whitesmoke
+
 
 // blog roll
 .blog-list-item.is-featured
